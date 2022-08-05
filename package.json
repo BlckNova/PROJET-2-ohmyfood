@@ -1,0 +1,12 @@
+{
+  "name": "revision",
+  "version": "1.2.0",
+  "description": "Deuxième version",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run sass",
+    "sass": "sass --watch ./scss/main.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
