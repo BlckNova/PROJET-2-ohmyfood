@@ -61,8 +61,8 @@
         bottom: 0;
         background-image: $linear-gradient;
         background-size: 100%;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         transition-delay: .5s;
         transition: opacity .5s ease-out;
     }
