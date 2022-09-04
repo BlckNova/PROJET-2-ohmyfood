@@ -17,7 +17,9 @@
 
     &__title {
         font-weight: 900;
-        margin-bottom: rem(5);   
+        margin-bottom: rem(5);
+        text-overflow: ellipsis;
+        overflow: hidden;  
     }
 
     &__composition {

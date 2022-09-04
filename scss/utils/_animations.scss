@@ -1,10 +1,13 @@
 @keyframes plateappear {
-    0% {
-      transform: scale(0)
-    }
-    100% {
-      transform: scale(1);
-    }
+    100%{
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	  }
+	
+	50%{
+		-webkit-transform: scaleY(1.8);
+		transform: scaleY(1.8);
+	  }
 }
 
 @keyframes spin {

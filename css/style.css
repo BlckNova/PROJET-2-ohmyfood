@@ -41,11 +41,13 @@
 }
 
 @keyframes plateappear {
-  0% {
-    transform: scale(0);
-  }
   100% {
-    transform: scale(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
   }
 }
 @keyframes spin {
@@ -428,6 +430,8 @@ button {
 .plate__title {
   font-weight: 900;
   margin-bottom: 0.3125rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .plate__composition {
   font-weight: 300;
@@ -467,34 +471,34 @@ button {
   transform: rotate(360deg);
 }
 .plate--1 {
-  animation-delay: 50ms;
-}
-.plate--2 {
-  animation-delay: 100ms;
-}
-.plate--3 {
-  animation-delay: 150ms;
-}
-.plate--4 {
   animation-delay: 200ms;
 }
-.plate--5 {
-  animation-delay: 250ms;
-}
-.plate--6 {
-  animation-delay: 300ms;
-}
-.plate--7 {
-  animation-delay: 350ms;
-}
-.plate--8 {
+.plate--2 {
   animation-delay: 400ms;
 }
+.plate--3 {
+  animation-delay: 600ms;
+}
+.plate--4 {
+  animation-delay: 800ms;
+}
+.plate--5 {
+  animation-delay: 1000ms;
+}
+.plate--6 {
+  animation-delay: 1200ms;
+}
+.plate--7 {
+  animation-delay: 1400ms;
+}
+.plate--8 {
+  animation-delay: 1600ms;
+}
 .plate--9 {
-  animation-delay: 450ms;
+  animation-delay: 1800ms;
 }
 .plate--10 {
-  animation-delay: 500ms;
+  animation-delay: 2000ms;
 }
 @media only screen and (min-width: 768px) {
   .plate {
